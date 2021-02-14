@@ -1,3 +1,163 @@
+:root {
+    --color-primary: #0C161D;
+    --color-secondary: #002366;
+    --color-dark: #131416;
+    --color-light: #FFFCF2;
+    --color-neutral: #CCC5B9;
+    --menu-element-count: 4;
+}
+
+@font-face {
+    font-family: Scriptina;
+    /* finish adding fonts */
+}
+
 body {
-    background-image: url("DNA\ Image.jpg");
+    background-image: radial-gradient(circle at right bottom, var(--color-primary), var(--color-dark) 80%);
+    
+}
+.banner {
+    position: fixed;
+    width: 100px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--color-secondary);
+    border-right: var(--color-light) 2px solid;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar-icon {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: var(--color-light);
+    font-weight: 800;
+    color: var(--color-primary);
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+
+}
+
+.nav-bar-item {
+    color: var(--color-light);
+    /* height: calc(100%/var(--menu-element-count)); */
+    /* border: 2px solid var(--color-secondary); */
+    padding: 10px;
+    /* border-radius: 20px; */
+    flex-basis: content;
+    box-shadow: var(--color-neutral);
+    font-size: 20px;
+    font-weight: 700px;
+    flex: 1;
+    
+}
+
+.nav-bar-item a {
+    font-size: 32px;
+    font-weight: 700px;
+    
+}
+
+.name-title {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: var(--color-neutral);
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    align-content: center;
+    max-width: 800px;
+}
+
+.center {
+}
+.work {
+    font-size: 18px;
+    margin: 0 auto;
+    
+}
+
+/* .alias {
+
+} */
+.about {
+    color: var(--color-neutral);
+    min-height: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.about h1 {
+    font-size: 32px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.portrait {
+    max-width: 300px;
+
+}
+
+.work-img {
+    max-width: 600px;
+
+}
+.work-item {
+    height: 800px;
+    width: 500px;
+}
+
+.work-item h1 {
+    font-size: 36px;
+    color: var(--color-secondary);
+}
+
+.work-item h2 {
+    font-size: 48px;
+    color: var(--color-neutral);
+}
+
+.no-hyperlink {
+    color: var(--color-secondary);
+    
+}
+
+.contact {
+    font-size: 36px;
+    color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact a {
+    font-size: 24px;
+    color: var(--color-neutral);
+    line-height: 1.5;
+}
+
+.six-pack {
+    border: 2px gray solid;
+    border-radius: 50;
+}
+
+.six-pack div {
+    border: 3px red solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    
 }

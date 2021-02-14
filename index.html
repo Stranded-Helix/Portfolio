@@ -5,27 +5,66 @@
 <head>
     <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="G. Fite Portfolio">
+    <title>G. Fite</title>
+    <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <script src="js/scripts.js"></script>
     <header>
-        <div class="nav-bar">
-            <button>G</button>
+        <div class="banner">
+            <div class="nav-bar">
+                <!--<a class="nav-bar-icon">GF</a>-->
+                <a href="#about" class="nav-bar-item">About</a>
+                <a href="#work-1" class="nav-bar-item">Work.01</a>
+                <a href="#work-2" class="nav-bar-item">Work.02</a>
+                <a href="#contact" class="nav-bar-item">Contact</a>
+            </div>
         </div>
     </header>
     <main>
-
+        <div class="center">
+            <div id="about" class="about">
+                <h1>About</h1>
+                <p>My name is Garrett. I'm beginning my career in Web Development and Software Engineering. My past experience includes
+                    small programs for family and friends, but I'm looking for the next step up. In my free time, I'm an
+                    avid gamer and I love to fly planes when I can afford it.</p>
+                    <img class="portrait" src="assets/GarrettPortrait.jpg">
+            </div>
+            <div class="work">
+                <div class="work-item">
+                    <h1 id="work-1">Work.01</h1>
+                    <h2>Code 128 Barcode Generator</h2>
+                    <a href="https://github.com/Stranded-Helix/Barcode">
+                        <img class="work-img" src="assets/Barcode-generator.png">
+                        Github
+                    </a>
+                </div>
+                <div class="work-item">
+                    <h1 id="work-2">Work.02</h1>
+                    <h2>Tire Quote Generator</h2>
+                    <a class="no-hyperlink">
+                        <img class="work-img" src="assets/WTC logo.png">
+                        No Link Available
+                    </a>
+                </div>
+            </div>
+            <div id="contact" class="contact">
+                <h1>Contact Me</h1>
+                <a href="https://www.linkedin.com/in/garrett-fite-07a74096/">Linkedin</a>
+                <a href="https://github.com/Stranded-Helix">GitHub</a>
+                <a>Email: Garrett.fite@gmail.com</a>
+            </div>
+        </div>
     </main>
     <footer>
+
     </footer>
-    
+    <!-- <script src="js/scripts.js"></script> -->
 </body>
 
 </html>

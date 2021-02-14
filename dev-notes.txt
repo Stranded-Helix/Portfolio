@@ -1,0 +1,36 @@
+//Reqs
+[] Dev Name, Recent Photo, About Me section, Works Sections, Contact Section
+[] Clicking links navigates to corresponding sections/ I would like for sections to expand
+[] First Application is displayed larger than others?/ I would prefer not, but will see how the display holds up
+[] When Clicking images of Works, link takes you to the deployed Application
+[] Responsive layouts, mobile etc.
+
+
+////Menu Items Ideas
+Intro
+Who/About
+What?
+Works/Projects
+Contacts
+LinkedIn
+Email
+Github
+
+//Colors
+DDD8B8- Dutch White
+E6E6E6- Platinum
+
+131416
+0C161D
+427AA1
+FFFCF2
+CCC5B9
+
+131416
+0C161D
+2C83A0
+FFFCF2
+CCC5B9
+
+002366-ROYAL BLUE
+090A0B-Rich Black FOGRA 39
