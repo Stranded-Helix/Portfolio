@@ -10,8 +10,8 @@
   <meta name="author" content="Portfolio">
 
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -22,9 +22,9 @@
         <img class="logo-image" src="assets/SilverHelix.png">
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Major Projects</a></li>
-        <li><a href="badges.html">Minor Projects</a></li>
-        <li><a href="collapsible.html">Contact</a></li>
+        <li><a href="#Major-projects">Major Projects</a></li>
+        <!--minor projects<li><a href="badges.html">Minor Projects</a></li>-->
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
     </div>
@@ -39,7 +39,7 @@
             <div class="card blue-gradient">
               <div class="card-image">
                 <img src="./assets/Portfolio.jpg">
-                <span class="card-title">About Myself</span>
+                <span class="card-title color-neutral">About Myself</span>
               </div>
               <div class="card-content">
                 <p>My name is Garrett. I started to program about 3 years ago by reading, watching videos and trial and
@@ -50,13 +50,27 @@
                 <p></p>
               </div>
               <div class="card-action blue-gradient">
-                <a class="resume-link" href="#">Resume</a>
+                <a class="resume-link modal-trigger" href="#modal-resume">Resume</a>
               </div>
             </div>
           </div>
         </div>
+        <!--Resume Modal-->
+        <div id="modal-resume" class="modal blue-gradient">
+          <div class="card blue-gradient">
+            <div class="modal-content">
+              <h4>Download</h4>
+              <p>G.Fite Resume - 2021.pdf</p>
+            </div>
+            <div class="blue-gradient card-action center-align">
+              <a href="./assets/G.Fite Resume - 2021.pdf" class="modal-close" download>Download</a>
+              <a href="#!" class="modal-close ">Cancel</a>
+            </div>
+          </div>
+
+        </div>
         <!--Projects-->
-        <h4 class="header">Major Projects</h4>
+        <h4 id="Major-project" class="header">Major Projects</h4>
         <!--Major Project 1-->
         <div class="card horizontal">
           <div class="card-image">
@@ -107,19 +121,25 @@
           </div>
         </div>
       </div>
-      <div id="contact" class="contact">
-        <h1>Contact Me</h1>
-        <a href="https://www.linkedin.com/in/garrett-fite-07a74096/">Linkedin</a>
-        <a href="https://github.com/Stranded-Helix">GitHub</a>
-        <a>Email: Garrett.fite@gmail.com</a>
+      <h4>Contact Me</h4>
+      <div id="contact" class="card horizontal">
+        <div class="card-stacked blue-gradient">
+          <div class="card-content">
+          </div>
+          <div class="card-action">
+            <a href="https://www.linkedin.com/in/garrett-fite-07a74096/">Linkedin</a>
+            <a href="https://github.com/Stranded-Helix">GitHub</a>
+            <a href="mailto: garrett.fite@gmail.com">Garrett.fite@gmail.com</a>
+          </div>
+        </div>
       </div>
     </div>
   </main>
   <footer>
 
   </footer>
-  <!-- <script src="js/scripts.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

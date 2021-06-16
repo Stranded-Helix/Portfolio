@@ -44,10 +44,8 @@ body {
 
 }
 
-.my-center{
-    margin: auto 0px;
-    width: 50%;
-    
+.color-neutral {
+    color: var(--color-neutral);
 }
 
 .blue-line {
@@ -109,38 +107,9 @@ main {
     padding: 30px;
 }
 
-.about h1 {
-    font-size: 32px;
-}
-
-.about p {
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.5;
-}
-
 .portrait {
     max-width: 300px;
 
-}
-
-.work-img {
-    max-width: 600px;
-
-}
-.work-item {
-    height: 800px;
-    width: 500px;
-}
-
-.work-item h1 {
-    font-size: 36px;
-    color: var(--color-secondary);
-}
-
-.work-item h2 {
-    font-size: 48px;
-    color: var(--color-neutral);
 }
 
 .no-hyperlink {
@@ -148,29 +117,3 @@ main {
     
 }
 
-.contact {
-    font-size: 36px;
-    color: var(--color-secondary);
-    display: flex;
-    flex-direction: column;
-}
-
-.contact a {
-    font-size: 24px;
-    color: var(--color-neutral);
-    line-height: 1.5;
-}
-
-.six-pack {
-    border: 2px gray solid;
-    border-radius: 50;
-}
-
-.six-pack div {
-    border: 3px red solid;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    
-}
