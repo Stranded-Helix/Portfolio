@@ -1,6 +1,8 @@
 :root {
     --color-primary: #0C161D;
-    --color-secondary: #002366;
+    --color-secondary: #50D2E7;
+    --color-menu: #143049;
+    --color-menu-transparent: #14304900;
     --color-dark: #131416;
     --color-light: #FFFCF2;
     --color-neutral: #CCC5B9;
@@ -13,21 +15,20 @@
 }
 
 body {
-    background-image: radial-gradient(circle at right bottom, var(--color-primary), var(--color-dark) 80%);
-    
+    background-image: url('../assets/WebsiteBackground.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--color-neutral);
 }
-.banner {
-    position: fixed;
-    width: 100px;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: var(--color-secondary);
-    border-right: var(--color-light) 2px solid;
+
+.transparent-background {
+    background-color: transparent;
+    box-shadow: 0px 0px;
 }
-.nav-bar {
-    display: flex;
-    flex-direction: column;
+
+.nav-wrapper {
+    background-image: linear-gradient(to bottom, var(--color-menu), var(--color-menu-transparent));
 }
 
 .nav-bar-icon {
@@ -43,24 +44,34 @@ body {
 
 }
 
-.nav-bar-item {
-    color: var(--color-light);
-    /* height: calc(100%/var(--menu-element-count)); */
-    /* border: 2px solid var(--color-secondary); */
-    padding: 10px;
-    /* border-radius: 20px; */
-    flex-basis: content;
-    box-shadow: var(--color-neutral);
-    font-size: 20px;
-    font-weight: 700px;
-    flex: 1;
+.my-center{
+    margin: auto 0px;
+    width: 50%;
     
 }
 
-.nav-bar-item a {
-    font-size: 32px;
-    font-weight: 700px;
-    
+.blue-line {
+    background-color: var(--color-secondary);
+    height: 1px;
+}
+
+.logo-container {
+    height: 100%;
+    max-height: 100%;
+}
+
+.logo-image {
+    height: 100%;
+    max-height: 100%;
+}
+
+.blue-gradient {
+    background-image: linear-gradient(to bottom, var(--color-menu), var(--color-dark));
+}
+
+.resume-link {
+    background-image: linear-gradient(to top, var(#ffab40), var(--color-menu));
+    color: var(--color-neutral);
 }
 
 .name-title {
@@ -77,7 +88,9 @@ main {
     max-width: 800px;
 }
 
-.center {
+.frame {
+    background-color: black;
+    padding: 2px
 }
 .work {
     font-size: 18px;

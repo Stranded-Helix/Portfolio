@@ -3,68 +3,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>G. Fite</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+  <title>G. Fite</title>
+  <meta name="description" content="Garrett Fite Portfolio">
+  <meta name="author" content="Portfolio">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="banner">
-            <div class="nav-bar">
-                <!--<a class="nav-bar-icon">GF</a>-->
-                <a href="#about" class="nav-bar-item">About</a>
-                <a href="#work-1" class="nav-bar-item">Work.01</a>
-                <a href="#work-2" class="nav-bar-item">Work.02</a>
-                <a href="#contact" class="nav-bar-item">Contact</a>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="center">
-            <div id="about" class="about">
-                <h1>About</h1>
-                <p>My name is Garrett. I'm beginning my career in Web Development and Software Engineering. My past experience includes
-                    small programs for family and friends, but I'm looking for the next step up. In my free time, I'm an
-                    avid gamer and I love to fly planes when I can afford it.</p>
-                    <img class="portrait" src="assets/GarrettPortrait.jpg">
-            </div>
-            <div class="work">
-                <div class="work-item">
-                    <h1 id="work-1">Work.01</h1>
-                    <h2>Code 128 Barcode Generator</h2>
-                    <a href="https://github.com/Stranded-Helix/Barcode">
-                        <img class="work-img" src="assets/Barcode-generator.png">
-                        Github
-                    </a>
-                </div>
-                <div class="work-item">
-                    <h1 id="work-2">Work.02</h1>
-                    <h2>Tire Quote Generator</h2>
-                    <a class="no-hyperlink">
-                        <img class="work-img" src="assets/WTC logo.png">
-                        No Link Available
-                    </a>
-                </div>
-            </div>
-            <div id="contact" class="contact">
-                <h1>Contact Me</h1>
-                <a href="https://www.linkedin.com/in/garrett-fite-07a74096/">Linkedin</a>
-                <a href="https://github.com/Stranded-Helix">GitHub</a>
-                <a>Email: Garrett.fite@gmail.com</a>
-            </div>
-        </div>
-    </main>
-    <footer>
+  <nav class="transparent-background">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo logo-container">
+        <img class="logo-image" src="assets/SilverHelix.png">
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Major Projects</a></li>
+        <li><a href="badges.html">Minor Projects</a></li>
+        <li><a href="collapsible.html">Contact</a></li>
+      </ul>
 
-    </footer>
-    <!-- <script src="js/scripts.js"></script> -->
+    </div>
+  </nav>
+  <main>
+
+    <div class="center">
+      <div class="col s6 m6 l6 xl6">
+        <!--About-->
+        <div class="row">
+          <div class="col s6 m6 l6 xl6 offset-s3 offset-m3 offset-l3 offset-xl3">
+            <div class="card blue-gradient">
+              <div class="card-image">
+                <img src="./assets/Portfolio.jpg">
+                <span class="card-title">About Myself</span>
+              </div>
+              <div class="card-content">
+                <p>My name is Garrett. I started to program about 3 years ago by reading, watching videos and trial and
+                  error. I'm currently studying full stack development through SMU's Boot Camp. Though I have
+                  made small programs for family and friends in the past, I am looking to progess into a career in
+                  software development. In my free time, I enjoy spending time with my German Shepherd, Ava, playing all
+                  kinds of video games, and flying planes.</p>
+                <p></p>
+              </div>
+              <div class="card-action blue-gradient">
+                <a class="resume-link" href="#">Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Projects-->
+        <h4 class="header">Major Projects</h4>
+        <!--Major Project 1-->
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="./assets/StolenCanvasHomeImage.png">
+          </div>
+          <div class="card-stacked blue-gradient">
+            <div class="card-content">
+              <h5>Stolen Canvas</h5>
+              <p>Heroku hosted website simulating a e-commerce site selling great works of art using HTML, CSS,
+                express.js</p>
+            </div>
+            <div class="card-action">
+              <a href="https://afternoon-ocean-89274.herokuapp.com/">Deployed App</a>
+              <a href="https://github.com/chancevaughn/Stolen-Canvas">Github</a>
+            </div>
+          </div>
+        </div>
+        <!--Major Project 2-->
+        <div class="card horizontal">
+          <div class="card-stacked blue-gradient">
+            <div class="card-content">
+              <h5>Global-Nibz</h5>
+              <p>Food and Recipie randomizer that selects 3 options from the same region using Edamam API, HTML, CSS,
+                and Javascript</p>
+            </div>
+            <div class="card-action">
+              <a href="https://doublelforce5.github.io/Global-Nibz/">Deployed App</a>
+              <a href="https://github.com/DoubleLForce5/Global-Nibz">Github</a>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./assets/GlobalNibzHomeImage.png">
+          </div>
+        </div>
+        <!--Major Project 3-->
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="./assets/Barcode-generator.png">
+          </div>
+          <div class="card-stacked blue-gradient">
+            <div class="card-content">
+              <h5>Code 128 Barcode Generator</h5>
+              <p>Generates barcode images in Code 128 format using C#</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/Stranded-Helix/Barcode">Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <a href="https://www.linkedin.com/in/garrett-fite-07a74096/">Linkedin</a>
+        <a href="https://github.com/Stranded-Helix">GitHub</a>
+        <a>Email: Garrett.fite@gmail.com</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <!-- <script src="js/scripts.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
