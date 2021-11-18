@@ -117,3 +117,19 @@ main {
     
 }
 
+.download-link {
+    margin-right: 0;
+}
+
+.download-link-box {
+    width: 25vh;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    margin-right: 0px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-around;
+}
